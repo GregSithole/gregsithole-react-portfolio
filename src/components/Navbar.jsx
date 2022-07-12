@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa';
+import { images } from '../constants';
 
 const Navbar = () => {
 
@@ -9,7 +10,7 @@ const Navbar = () => {
     return (
         <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#202020] text-gray-300'>
             <div>
-                <h1 className='font-xl'>Greg Sithole</h1>
+                <img src={images.logo} alt='logo' style={{ width: '60px' }} />
             </div >
 
             <ul className='hidden md:flex'>
