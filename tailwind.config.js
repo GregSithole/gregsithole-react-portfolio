@@ -8,7 +8,8 @@ module.exports = {
       colors: {
         transparent: 'transparent',
         current: 'currentColor',
-        'social': '#393939'
+        'social': '#393939',
+        'primary': '#ffa500'
       },
     },
   },
