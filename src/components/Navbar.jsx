@@ -10,9 +10,9 @@ const Navbar = () => {
     const handleClick = () => setNavigation(!navigation);
 
     return (
-        <div className='fixed w-full h-[100px] flex justify-between items-center px-4 bg-[#202020] text-white'>
+        <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#202020] text-white'>
             <div>
-                <img src={images.logo} alt='logo' style={{ width: '100px' }} />
+                <img src={images.logo} alt='logo' style={{ width: '60px' }} />
             </div >
 
             <ul className='hidden md:flex'>
