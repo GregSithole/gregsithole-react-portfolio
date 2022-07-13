@@ -14,3 +14,11 @@
         @apply cursor-pointer;
     }
 }
+
+ul.experience li:before {    
+    font-family: 'FontAwesome';
+    content: "▹";
+    position: absolute;
+    left: 0px;
+    color: #ffa500;
+}
