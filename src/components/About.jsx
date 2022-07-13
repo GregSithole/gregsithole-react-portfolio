@@ -6,13 +6,13 @@ const About = () => {
             <div className='flex flex-col justify-center items-center w-full h-full'>
                 <div className='max-w-[1000px] w-full px-4 grid grid-cols-2 gap-8'>
                     <div className='sm:text-right pb-8 pl-4'>
-                        <p className='text-4xl font-bold inline border-b-4 border-[#ffa500]'>About</p>
+                        <p className='text-4xl font-bold inline border-b-4 border-primary'>About</p>
                     </div>
                     <div>
 
                     </div>
                 </div>
-                <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
+                <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-8 sm:px-4'>
                     <div className='sm:text-rigt text-4xl font-bold '>
                         <p>Hi. I'm Greg, and welcome to my website. Please take a look around.</p>
                     </div>
