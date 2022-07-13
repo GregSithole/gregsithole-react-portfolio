@@ -1,0 +1,11 @@
+version: "3.6"
+
+services:
+  crypto:
+    build:
+      context: $PWD/../..
+      dockerfile: $PWD/gregsithole-react-portfolio/Dockerfile
+    volumes:
+      - ../../src:/app/src
+    ports:
+      - "3000:3000"
