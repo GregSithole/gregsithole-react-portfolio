@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { FaBars, FaTimes, FaGithub, FaLinkedin, FaFacebook, FaTwitter } from 'react-icons/fa';
+import { FiFacebook, FiGithub, FiLinkedin, FiMail, FiTwitter } from 'react-icons/fi';
 import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { images } from '../constants';
@@ -40,34 +41,29 @@ const Navbar = () => {
 
             <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
                 <ul>
-                    <li className='w-[160px] h-[60px] flex justify-between item-center ml-[-100px] hover:ml-[-10px] duration-300 bg-social'>
+                    <li className='w-[50px] h-[50px] m-2 flex justify-between item-center border rounded-md border-[#474747] hover:bg-[#474747]'>
                         <a className='flex justify-between items-center w-full text-white' href="/">
-                            Facebook <FaFacebook size={30} />
+                            <FiFacebook size={40} />
                         </a>
                     </li>
-                    <li className='w-[160px] h-[60px] flex justify-between item-center ml-[-100px] hover:ml-[-10px] duration-300 bg-social'>
+                    <li className='w-[50px] h-[50px] m-2 flex justify-between item-center border rounded-md border-[#474747] hover:bg-[#474747]'>
                         <a className='flex justify-between items-center w-full text-white' href="/">
-                            Twitter <FaTwitter size={30} />
+                            <FiTwitter size={40} />
                         </a>
                     </li>
-                    <li className='w-[160px] h-[60px] flex justify-between item-center ml-[-100px] hover:ml-[-10px] duration-300 bg-social'>
+                    <li className='w-[50px] h-[50px] m-2 flex justify-between item-center border rounded-md border-[#474747] hover:bg-[#474747]'>
                         <a className='flex justify-between items-center w-full text-white' href="/">
-                            Linkedin <FaLinkedin size={30} />
+                            <FiLinkedin size={40} />
                         </a>
                     </li>
-                    <li className='w-[160px] h-[60px] flex justify-between item-center ml-[-100px] hover:ml-[-10px] duration-300 bg-social'>
+                    <li className='w-[50px] h-[50px] m-2 flex justify-between item-center border rounded-md border-[#474747] hover:bg-[#474747]'>
                         <a className='flex justify-between items-center w-full text-white' href="/">
-                            Github <FaGithub size={30} />
+                            <FiGithub size={40} />
                         </a>
                     </li>
-                    <li className='w-[160px] h-[60px] flex justify-between item-center ml-[-100px] hover:ml-[-10px] duration-300 bg-social'>
+                    <li className='w-[50px] h-[50px] m-2 flex justify-between item-center border rounded-md border-[#474747] hover:bg-[#474747]'>
                         <a className='flex justify-between items-center w-full text-white' href="/">
-                            Email <HiOutlineMail size={30} />
-                        </a>
-                    </li>
-                    <li className='w-[160px] h-[60px] flex justify-between item-center ml-[-100px] hover:ml-[-10px] duration-300 bg-social'>
-                        <a className='flex justify-between items-center w-full text-white' href="/">
-                            Resume <BsFillPersonLinesFill size={30} />
+                            <FiMail size={40} />
                         </a>
                     </li>
                 </ul>

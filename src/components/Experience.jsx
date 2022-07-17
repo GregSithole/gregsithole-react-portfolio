@@ -13,7 +13,7 @@ const Experience = () => {
 
                 <div className='hidden sm:flex'>
                     <section class="py-20 mx-auto space-y-8 sm:py-20 w-full">
-                        <div class="container flex flex-row items-stretch justify-center w-full max-w-4xl space-x-12">
+                        <div class="container flex flex-row items-stretch justify-center w-full max-w-xl space-x-12">
                             <div class="flex flex-col justify-start w-1/4 border-l-2 border-[#343434]">
                                 <button className={currentTab === 1 ? 'px-4 py-2 text-sm z-20 border-l-2 bg-[#343434] border-primary font-bold text-left' : 'px-4 py-2 text-sm text-left'} onClick={() => setCurrentTab(1)}>
                                     Kurtosys
@@ -43,8 +43,11 @@ const Experience = () => {
                                         Janurary 2022 - Present
                                     </p>
                                     <ul className='experience'>
-                                        <li>Example 1</li>
-                                        <li>Example 2</li>
+                                        <li>Planned, developed, tested, deployed, and maintained business management &
+                                            lead integration systems with a small team</li>
+                                        <li>Improved and optimized company's website for seamless customer experience</li>
+                                        <li>Created, communicated, and managed project plans & project timelines</li>
+                                        <li>Worked to continually meet the expectation of our clients</li>
                                     </ul>
                                 </div>
                                 <div className={currentTab === 2 ? 'space-y-1 group transition duration-500 transform ease-in opacity-1' : 'opacity-0 h-0'}>
@@ -55,8 +58,11 @@ const Experience = () => {
                                         May 2017 - December 2021
                                     </p>
                                     <ul className='experience'>
-                                        <li>Example 1</li>
-                                        <li>Example 2</li>
+                                        <li>Planned, developed, tested, deployed, and maintained business management &
+                                            lead integration systems with a small team</li>
+                                        <li>Improved and optimized company's website for seamless customer experience</li>
+                                        <li>Created, communicated, and managed project plans & project timelines</li>
+                                        <li>Worked to continually meet the expectation of our clients</li>
                                     </ul>
                                 </div>
                                 <div className={currentTab === 3 ? 'space-y-1 group transition duration-500 transform ease-in opacity-1' : 'opacity-0 h-0'}>
@@ -67,8 +73,9 @@ const Experience = () => {
                                         Feburary 2016 - April 2017
                                     </p>
                                     <ul className='experience'>
-                                        <li>Example 1</li>
-                                        <li>Example 2</li>
+                                        <li>Planned, developed, tested, deployed, and maintained web applications and mobile
+                                            applications</li>
+                                        <li>Worked well independently and on a team to solve problems.</li>
                                     </ul>
                                 </div>
                                 <div className={currentTab === 4 ? 'space-y-1 group transition duration-500 transform ease-in opacity-1' : 'opacity-0 h-0'}>
@@ -79,8 +86,8 @@ const Experience = () => {
                                         November 2015 - January 2016
                                     </p>
                                     <ul className='experience'>
-                                        <li>Example 1</li>
-                                        <li>Example 2</li>
+                                        <li> Worked to solve complex problems using the latest in Mobile and Web Technologies.</li>
+                                        <li>Served as a dedicated and supportive Intern in a fast-paced environment.</li>
                                     </ul>
                                 </div>
                                 <div className={currentTab === 5 ? 'space-y-1 group transition duration-500 transform ease-in opacity-1' : 'opacity-0 h-0'}>
@@ -91,8 +98,9 @@ const Experience = () => {
                                         Feburary 2015 - May 2015
                                     </p>
                                     <ul className='experience'>
-                                        <li>Example 1</li>
-                                        <li>Example 2</li>
+                                        <li>Worked to support the senior support staff with day-to-day tasks</li>
+                                        <li>Assisted with the evaluation and troubleshooting of hardware and software issues.</li>
+                                        <li>Maintaining computer Inventory & surplus equipment.</li>
                                     </ul>
                                 </div>
                                 <div className={currentTab === 6 ? 'space-y-1 group transition duration-500 transform ease-in opacity-1' : 'opacity-0 h-0'}>
@@ -103,8 +111,8 @@ const Experience = () => {
                                         December 2014 - Feburary 2015
                                     </p>
                                     <ul className='experience'>
-                                        <li>Example 1</li>
-                                        <li>Example 2</li>
+                                        <li>Monitored registration for all prospective student</li>
+                                        <li>Assisted parents and prospective student with necessary registration details.</li>
                                     </ul>
                                 </div>
                             </div>
@@ -121,8 +129,11 @@ const Experience = () => {
                             Janurary 2022 - Present
                         </p>
                         <ul className='experience'>
-                            <li>Example 1</li>
-                            <li>Example 2</li>
+                            <li>Planned, developed, tested, deployed, and maintained business management &
+                                lead integration systems with a small team</li>
+                            <li>Improved and optimized company's website for seamless customer experience</li>
+                            <li>Created, communicated, and managed project plans & project timelines</li>
+                            <li>Worked to continually meet the expectation of our clients</li>
                         </ul>
                     </div>
                     <div className='space-y-1 group transition duration-500 transform ease-in opacity-1'>
@@ -133,8 +144,11 @@ const Experience = () => {
                             May 2017 - December 2021
                         </p>
                         <ul className='experience'>
-                            <li>Example 1</li>
-                            <li>Example 2</li>
+                            <li>Planned, developed, tested, deployed, and maintained business management &
+                                lead integration systems with a small team</li>
+                            <li>Improved and optimized company's website for seamless customer experience</li>
+                            <li>Created, communicated, and managed project plans & project timelines</li>
+                            <li>Worked to continually meet the expectation of our clients</li>
                         </ul>
                     </div>
                     <div className='space-y-1 group transition duration-500 transform ease-in opacity-1'>
@@ -145,8 +159,9 @@ const Experience = () => {
                             Feburary 2016 - April 2017
                         </p>
                         <ul className='experience'>
-                            <li>Example 1</li>
-                            <li>Example 2</li>
+                            <li>Planned, developed, tested, deployed, and maintained web applications and mobile
+                                applications</li>
+                            <li>Worked well independently and on a team to solve problems.</li>
                         </ul>
                     </div>
                     <div className='space-y-1 group transition duration-500 transform ease-in opacity-1'>
@@ -157,8 +172,9 @@ const Experience = () => {
                             November 2015 - January 2016
                         </p>
                         <ul className='experience'>
-                            <li>Example 1</li>
-                            <li>Example 2</li>
+                            <li> Worked to solve complex problems using the latest in Mobile and Web
+                                Technologies.</li>
+                            <li>Served as a dedicated and supportive Intern in a fast-paced environment.</li>
                         </ul>
                     </div>
                     <div className='space-y-1 group transition duration-500 transform ease-in opacity-1'>
@@ -169,8 +185,9 @@ const Experience = () => {
                             Feburary 2015 - May 2015
                         </p>
                         <ul className='experience'>
-                            <li>Example 1</li>
-                            <li>Example 2</li>
+                            <li>Worked to support the senior support staff with day-to-day tasks</li>
+                            <li>Assisted with the evaluation and troubleshooting of hardware and software issues.</li>
+                            <li>Maintaining computer Inventory & surplus equipment.</li>
                         </ul>
                     </div>
                     <div className='space-y-1 group transition duration-500 transform ease-in opacity-1'>
@@ -181,8 +198,8 @@ const Experience = () => {
                             December 2014 - Feburary 2015
                         </p>
                         <ul className='experience'>
-                            <li>Example 1</li>
-                            <li>Example 2</li>
+                            <li>Monitored registration for all prospective student</li>
+                            <li>Assisted parents and prospective student with necessary registration details.</li>
                         </ul>
                     </div>
                 </div>

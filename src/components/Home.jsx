@@ -8,7 +8,7 @@ const Home = () => {
                 <p className='text-primary'>Hi, my name is</p>
                 <h1 className='text-4xl sm:text-7xl font-bold text-white'>Greg Sithole</h1>
                 <h2 className='text-4xl sm:text-7xl font-bold text-gray-400'>I'm Full Stack Software Engineer</h2>
-                <p className='text-gray-400 py-4 max-w-[700px]'>I'm a full-stack software engineer specializing in building exceptional digital experiences. Currently, I'm focuse on building responsive full-stack web application</p>
+                <p className='text-gray-400 py-4 max-w-[700px]'>I am a Johannesburg-based full-stack software engineer specializing in building exceptional digital experiences. Currently, I'm focuse on building responsive full-stack web application</p>
                 <div>
                     <button className='text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-primary hover:border-primary'>
                         View Work

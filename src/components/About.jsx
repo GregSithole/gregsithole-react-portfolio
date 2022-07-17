@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { images } from '../constants';
 
 const About = () => {
     return (
@@ -13,11 +14,12 @@ const About = () => {
                     </div>
                 </div>
                 <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-8 sm:px-4'>
-                    <div className='sm:text-rigt text-4xl font-bold '>
-                        <p>Hi. I'm Greg, and welcome to my website. Please take a look around.</p>
+                    <div className=''>
+                        <p className='sm:text-rigt text-4xl font-bold '>Hi. I'm Greg, and welcome to my website. Please take a look around.</p>
+                        <p>I am a Full-Stack Software Engineer with several years industry experience. I have great enthusiasm for my work and I believe that it is an important part of my personal growth. In my spare time, I enjoy working on small projects. Learning new languages is another passion of mine. In my free time I like to read books and play video games</p>
                     </div>
-                    <div>
-                        I am a Full-Stack Software Engineer with several years industry experience. I have great enthusiasm for my work and I believe that it is an important part of my personal growth. In my spare time, I enjoy working on small projects. Learning new languages is another passion of mine. In my free time I like to read books and play video games
+                    <div className='flex items-center justify-center'>
+                        <img className='rounded-lg w-[300px]' src={images.profile} alt="profile" />
                     </div>
                 </div>
             </div>
