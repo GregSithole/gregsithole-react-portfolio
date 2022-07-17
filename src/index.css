@@ -15,6 +15,10 @@
     }
 }
 
+ul.experience li {
+    position: relative;
+} 
+
 ul.experience li:before {    
     font-family: 'FontAwesome';
     content: "▹";
