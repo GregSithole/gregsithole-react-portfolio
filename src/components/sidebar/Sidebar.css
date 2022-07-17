@@ -1,0 +1,33 @@
+aside {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: var(--body-color);
+  border-right: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 2.5rem;
+  width: 110px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.nav__link {
+  font-size: 1.5rem;
+  color: var(--title-color);
+  font-weight: var(--font-bold);
+}
+
+.copyright {
+  color: var(--title-color);
+  font-size: var(--small-font-size);
+  transform: rotate(-180deg);
+  writing-mode: vertical-rl;
+}
