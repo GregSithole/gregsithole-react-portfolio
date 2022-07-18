@@ -1,8 +1,7 @@
 import React from 'react';
 import './Sidebar.css';
 import Logo from "../../assets/logo.svg"
-import { RiHome2Line, RiUserFollowLine, RiBriefcase2Line, RiFolderChartLine, RiDraftLine, RiMessage3Line } from 'react-icons/ri';
-import { FaUserGraduate } from 'react-icons/fa'
+import { RiHome2Line, RiUserFollowLine, RiBriefcase2Line, RiFolderChartLine, RiDraftLine, RiMessage3Line, RiFileList3Line } from 'react-icons/ri';
 
 const Sidebar = () => {
     return (
@@ -35,7 +34,7 @@ const Sidebar = () => {
 
                         <li className="nav__item">
                             <a href="#resume" className="nav__link">
-                                <FaUserGraduate />
+                                <RiFileList3Line />
                             </a>
                         </li>
 
