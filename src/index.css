@@ -1,5 +1,5 @@
 /*=============== Google Fonts ===============*/
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;300;400;500;600;700;800;900&display=swap");
 
 :root {
   /*=============== Colors ===============*/
@@ -10,7 +10,7 @@
   --container-color: #fff;
 
   /*=============== Font and Typohraphy ===============*/
-  --body-font: "Nunito Sans", san-serif;
+  --body-font: "Noto Sans", san-serif;
   --h1-font-size: 2.25rem;
   --h2-font-size: 1.5rem;
   --h3-font-size: 1.25rem;
