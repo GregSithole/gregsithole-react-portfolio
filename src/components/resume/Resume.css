@@ -1,52 +1,54 @@
-.resume__container {
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 1.875rem;
-}
-
-.timeline {
+.tabs {
+  height: 100%;
+  display: flex;
   background-color: var(--container-color);
-  padding: 1.875rem;
   border-radius: var(--border-radius);
   position: relative;
   box-shadow: var(--shadow);
+  color: var();
 }
 
-.timeline__item {
-  position: relative;
-  padding-left: 3.125rem;
-  padding-bottom: 3.125rem;
+.tab__list {
+  width: 15rem;
 }
 
-.timeline__item:last-child {
-  padding-bottom: 0;
+.tab__panel {
+  flex: 1;
+  display: none;
+  padding: 1.5rem 2rem;
+}
+.tab__panel.is-active {
+  display: block;
 }
 
-.timeline__item::before {
-  content: "";
-  width: 1px;
-  height: 100%;
-  background-color: var(--first-color);
-  position: absolute;
-  left: 0.25rem;
-  top: 0;
-}
-
-.timeline .icon {
-  position: absolute;
-  left: -0.437rem;
-  top: 0;
-  font-size: var(--h2-font-size);
+.button {
+  display: inline-block;
+  width: 100%;
+  padding: 1rem 2rem;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: var(--normal-font-size);
   color: var(--first-color);
-  background-color: var(--container-color);
-  padding: 0.4375rem 0;
+  text-align: left;
 }
 
-.timeline__date {
-  color: #8b88b1;
-  font-size: var(--small-font-size);
+.tab:first-child .button {
+  border-top-left-radius: var(--border-radius);
 }
 
-.timeline__title {
-  font-size: var(--h3-font-size);
-  margin: 0.5rem 0;
+.tab:last-child .button {
+  border-bottom-left-radius: var(--border-radius);
+}
+
+.button:focus,
+.button:hover {
+  outline: 0;
+  background: rgb(249, 123, 139);
+  color: #fff;
+}
+
+.tab.is-active .button {
+  background: var(--first-color);
+  color: #fff;
 }
