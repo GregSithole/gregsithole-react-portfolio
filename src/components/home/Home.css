@@ -9,6 +9,7 @@
 .intro {
   max-width: 540px;
   text-align: center;
+  z-index: 10;
 }
 
 .home__img {
