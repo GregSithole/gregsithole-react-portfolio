@@ -1,11 +1,7 @@
 .tabs {
   height: 100%;
   display: flex;
-  background-color: var(--container-color);
-  border-radius: var(--border-radius);
   position: relative;
-  box-shadow: var(--shadow);
-  color: var();
 }
 
 .tab__list {
@@ -16,6 +12,9 @@
   flex: 1;
   display: none;
   padding: 1.5rem 2rem;
+  background-color: var(--container-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
 }
 .tab__panel.is-active {
   display: block;
@@ -29,7 +28,8 @@
   cursor: pointer;
   font-family: inherit;
   font-size: var(--normal-font-size);
-  color: var(--first-color);
+  font-weight: var(--font-bold);
+  color: var(--title-color);
   text-align: left;
 }
 
@@ -44,11 +44,18 @@
 .button:focus,
 .button:hover {
   outline: 0;
-  background: rgb(249, 123, 139);
-  color: #fff;
+  color: var(--first-color);
 }
 
 .tab.is-active .button {
-  background: var(--first-color);
-  color: #fff;
+  background-color: var(--container-color);
+  border-top-left-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+
+.tab__panel:first-of-type.is-active,
+.tab__panel:last-child.is-active {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
