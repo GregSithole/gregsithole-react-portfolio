@@ -1,38 +1,38 @@
-.work__filters {
+.portfolio__filters {
   display: flex;
   align-items: center;
   column-gap: 1.875rem;
   margin-bottom: 2.5rem;
 }
 
-.work__item {
+.portfolio__item {
   cursor: pointer;
   font-weight: var(--font-bold);
 }
 
-.work__item {
+.portfolio__item {
   cursor: pointer;
   font-weight: var(--font-bold);
   transition: 0.3s;
 }
 
-.work__item:hover {
+.portfolio__item:hover {
   color: var(--first-color);
 }
 
-.work__container {
+.portfolio__container {
   grid-template-columns: repeat(3, 1fr);
   gap: 1.875rem;
 }
 
-.work__card {
+.portfolio__card {
   position: relative;
   overflow: hidden;
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
 }
 
-.work__mask {
+.portfolio__mask {
   background-color: #6c6ce5;
   position: absolute;
   left: 0;
@@ -43,11 +43,11 @@
   opacity: 0;
 }
 
-.work__card:hover .work__mask {
+.portfolio__card:hover .portfolio__mask {
   opacity: 0.9;
 }
 
-.work__category {
+.portfolio__category {
   color: #fff;
   background-color: var(--first-color);
   border-bottom-left-radius: 0.98rem;
@@ -62,7 +62,7 @@
   transition: 0.3s;
 }
 
-.work__title {
+.portfolio__title {
   color: #fff;
   font-size: var(--h3-font-size);
   margin: 0 0 0.98rem;
@@ -74,7 +74,7 @@
   opacity: 0;
 }
 
-.work__button {
+.portfolio__button {
   color: #fff;
   position: absolute;
   bottom: 1.5rem;
@@ -92,12 +92,12 @@
   opacity: 0;
 }
 
-.work__card:hover .work__button {
+.portfolio__card:hover .portfolio__button {
   opacity: 1;
 }
 
-.work__card:hover .work__title,
-.work__card:hover .work__category {
+.portfolio__card:hover .portfolio__title,
+.portfolio__card:hover .portfolio__category {
   opacity: 1;
   transform: translateY(0);
 }

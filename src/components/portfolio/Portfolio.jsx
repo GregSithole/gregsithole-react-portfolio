@@ -15,34 +15,34 @@ const Portfolio = () => {
     }
 
     return (
-        <section className="work container section" id="work">
+        <section className="portfolio container section" id="portfolio">
             <h2 className="section__title">
                 Recent Projects
             </h2>
 
-            <div className="work__filters">
-                <span className="work__item" onClick={() => setItems(Menu)}>Everything</span>
-                <span className="work__item" onClick={() => filterItems('Creative')}>Creative</span>
-                <span className="work__item" onClick={() => filterItems('Art')}>Art</span>
-                <span className="work__item" onClick={() => filterItems('Design')}>Design</span>
-                <span className="work__item" onClick={() => filterItems('Branding')}>Branding</span>
+            <div className="portfolio__filters">
+                <span className="portfolio__item" onClick={() => setItems(Menu)}>Everything</span>
+                <span className="portfolio__item" onClick={() => filterItems('Creative')}>Creative</span>
+                <span className="portfolio__item" onClick={() => filterItems('Art')}>Art</span>
+                <span className="portfolio__item" onClick={() => filterItems('Design')}>Design</span>
+                <span className="portfolio__item" onClick={() => filterItems('Branding')}>Branding</span>
             </div>
 
-            <div className="work__container grid">
+            <div className="portfolio__container grid">
                 {items.map((elem) => {
                     const { id, image, title, category } = elem;
 
                     return (
-                        <div className="work__card" key={id}>
-                            <div className="work__thumbnail">
-                                <img src={image} alt="" className="work__img" />
-                                <div className="work__mask"></div>
+                        <div className="portfolio__card" key={id}>
+                            <div className="portfolio__thumbnail">
+                                <img src={image} alt="" className="portfolio__img" />
+                                <div className="portfolio__mask"></div>
                             </div>
 
-                            <span className="work__category">{category}</span>
-                            <h3 className="work__title">{title}</h3>
-                            <a href="#" className="work__button">
-                                <RiLink className='work__button-icon' />
+                            <span className="portfolio__category">{category}</span>
+                            <h3 className="portfolio__title">{title}</h3>
+                            <a href="#" className="portfolio__button">
+                                <RiLink className='portfolio__button-icon' />
                             </a>
                         </div>
                     )
