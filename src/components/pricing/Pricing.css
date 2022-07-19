@@ -1,0 +1,65 @@
+.pricing__container {
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+
+.pricing__item {
+  padding: 1.875rem 2.5rem;
+  background-color: var(--container-color);
+  text-align: center;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+
+.pricing__plan {
+  margin: 1.25rem 0;
+  font-size: var(--h2-font-size);
+}
+
+.pricing__title,
+.pricing__support {
+  margin-bottom: 1rem;
+}
+
+.price {
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-bold);
+}
+
+.price em {
+  font-style: normal;
+  font-size: var(--smaller-font-size);
+  margin-right: 0.5rem;
+  vertical-align: super;
+}
+
+.price span {
+  font-size: var(--normal-font-size);
+  font-weight: 400;
+  margin-bottom: 0.75rem;
+}
+
+.pricing__item .btn {
+  margin-top: 1.25rem;
+}
+
+.pricing__item.best {
+  padding: 3.4rem 2.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.badge {
+  position: absolute;
+  left: 0;
+  top: 2.6rem;
+  color: #fff;
+  background-color: #6c6ce5;
+  transform: rotate(-90deg);
+  padding: 0.25rem 0.75rem;
+  font-size: var(--small-font-size);
+  border-top-left-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
