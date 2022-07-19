@@ -29,7 +29,7 @@
   position: relative;
   overflow: hidden;
   border-radius: var(--border-radius);
-  box-sizing: var(--shadow);
+  box-shadow: var(--shadow);
 }
 
 .work__mask {
