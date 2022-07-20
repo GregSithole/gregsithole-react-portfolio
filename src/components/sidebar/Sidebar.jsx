@@ -1,11 +1,22 @@
-import React from 'react';
-import './Sidebar.css';
-import Logo from "../../assets/logo.svg"
-import { RiHome2Line, RiUserFollowLine, RiBriefcase2Line, RiFolderChartLine, RiDraftLine, RiMessage3Line, RiFileList3Line } from 'react-icons/ri';
+import React from "react";
+import "./Sidebar.css";
+import Logo from "../../assets/logo.svg";
+import {
+    RiHome2Line,
+    RiUserFollowLine,
+    RiBriefcase2Line,
+    RiFolderChartLine,
+    RiDraftLine,
+    RiMessage3Line,
+    RiFileList3Line,
+    RiMoonLine,
+    RiSunLine,
+} from "react-icons/ri";
 
-const Sidebar = () => {
+
+const Sidebar = (props) => {
     return (
-        <aside className='aside'>
+        <aside className="aside">
             <a href="#home" className="nav__logo">
                 <img src={Logo} alt="logo" />
             </a>
@@ -22,7 +33,6 @@ const Sidebar = () => {
                         <li className="nav__item">
                             <a href="#about" className="nav__link">
                                 <RiUserFollowLine />
-
                             </a>
                         </li>
 
@@ -60,12 +70,12 @@ const Sidebar = () => {
             </nav>
 
             <div className="nav__footer">
-                <span className="copyright">
-                    &copy; 2022 - 2023.
-                </span>
+                <button onClick={props.switchTheme} className="nav__link footer__button">
+                    {props.theme === 'light' ? <RiMoonLine /> : <RiSunLine />}
+                </button>
             </div>
         </aside>
-    )
-}
+    );
+};
 
-export default Sidebar
+export default Sidebar;

@@ -3,7 +3,7 @@ aside {
   left: 0;
   top: 0;
   background-color: var(--body-color);
-  border-right: 1px solid rgba(0, 0, 0, 0.05);
+  border-right: 1px solid var(--border-color);
   padding: 2.5rem;
   width: 110px;
   min-height: 100vh;
@@ -28,6 +28,10 @@ aside {
 
 .nav__link:hover {
   color: hsl(43, 100%, 68%);
+}
+
+.footer__button {
+  background-color: transparent;
 }
 
 .copyright {
