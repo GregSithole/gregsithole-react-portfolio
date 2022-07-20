@@ -14,9 +14,18 @@ const About = () => {
                 <div className="about__data grid">
                     <div className="about__info">
                         <p className="about__description">
-                            I am Greg Sithole, Software Engineer from Johannesburg, South Africa.
+                            Hello! I'm Greg<br /><br />
+                            Here are a few technologies I’ve been working with recently:
                         </p>
-                        <a href="" className="btn">Donwload CV</a>
+                        <ul className="about__list">
+                            <li>JavaScript (ES6+)</li>
+                            <li>TypeScript</li>
+                            <li>React</li>
+                            <li>Node.js</li>
+                            <li>Postgres SQL</li>
+                            <li>NestJS</li>
+                        </ul>
+                        <a href="#" className="btn">Donwload CV</a>
                     </div>
 
                     <div className="about__skills grid">

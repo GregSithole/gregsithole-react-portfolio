@@ -31,6 +31,23 @@
   text-align: justify;
 }
 
+.about__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 1rem;
+}
+
+.about__list li {
+  position: relative;
+  padding-left: 20px;
+}
+
+.about__list li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+}
+
 .about__skills {
   row-gap: 1.25rem;
 }

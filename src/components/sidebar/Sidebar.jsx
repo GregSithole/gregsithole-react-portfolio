@@ -3,11 +3,11 @@ import "./Sidebar.css";
 import Logo from "../../assets/logo.svg";
 import {
     RiHome2Line,
-    RiUserFollowLine,
+    RiUser3Line,
     RiBriefcase2Line,
-    RiFolderChartLine,
+    RiStackLine,
     RiDraftLine,
-    RiMessage3Line,
+    RiChat3Line,
     RiFileList3Line,
     RiMoonLine,
     RiSunLine,
@@ -32,25 +32,25 @@ const Sidebar = (props) => {
 
                         <li className="nav__item">
                             <a href="#about" className="nav__link">
-                                <RiUserFollowLine />
+                                <RiUser3Line />
                             </a>
                         </li>
 
                         <li className="nav__item">
                             <a href="#services" className="nav__link">
-                                <RiBriefcase2Line />
-                            </a>
-                        </li>
-
-                        <li className="nav__item">
-                            <a href="#resume" className="nav__link">
                                 <RiFileList3Line />
                             </a>
                         </li>
 
                         <li className="nav__item">
+                            <a href="#resume" className="nav__link">
+                                <RiBriefcase2Line />
+                            </a>
+                        </li>
+
+                        <li className="nav__item">
                             <a href="#portfolio" className="nav__link">
-                                <RiFolderChartLine />
+                                <RiStackLine />
                             </a>
                         </li>
 
@@ -62,7 +62,7 @@ const Sidebar = (props) => {
 
                         <li className="nav__item">
                             <a href="#contact" className="nav__link">
-                                <RiMessage3Line />
+                                <RiChat3Line />
                             </a>
                         </li>
                     </ul>
