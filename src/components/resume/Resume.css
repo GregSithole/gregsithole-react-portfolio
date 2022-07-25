@@ -59,3 +59,30 @@
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
+
+@media screen and (max-width: 768px) {
+  .resume__container {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  .tabs {
+    flex-wrap: wrap;
+  }
+
+  .tab__list {
+    width: 100vw;
+    margin-bottom: 1.25rem;
+  }
+
+  .tab__panel:first-of-type.is-active,
+  .tab__panel:last-child.is-active {
+    border-top-left-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
+  }
+
+  .tab.is-active .button {
+    border-top-right-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+  }
+}

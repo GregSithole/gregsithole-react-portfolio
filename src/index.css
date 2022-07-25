@@ -146,6 +146,16 @@ img {
   top: -0.875rem;
 }
 
+[data-theme="dark"] .section__title::before {
+  content: "";
+  background: url(./assets/dots-bg-dark.svg);
+  height: 2.25rem;
+  width: 2.25rem;
+  position: absolute;
+  left: -0.875rem;
+  top: -0.875rem;
+}
+
 .btn {
   padding: 0.75rem 2rem;
   line-height: 1;
