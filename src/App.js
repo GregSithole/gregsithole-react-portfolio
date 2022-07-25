@@ -32,7 +32,6 @@ function App() {
                 <Services />
                 <Resume />
                 <Portfolio />
-                <Pricing />
                 <Testimonials />
                 <Blog />
                 <Contact />
