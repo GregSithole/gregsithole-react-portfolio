@@ -86,3 +86,15 @@
     border-bottom-right-radius: var(--border-radius);
   }
 }
+
+.tab__panel-title {
+  font-size: var(--h3-font-size);
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.tab__panel-subtitle {
+  font-size: var(--normal-font-size);
+  margin-bottom: 1rem;
+  color: #f8f9fa;
+}

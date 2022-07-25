@@ -31,8 +31,8 @@ const Resume = () => {
                         const { id, company, yearsActive, title, information } = experience;
                         return (
                             <TabPanel key={`panel-${id}`}>
-                                <h2 className="tab__panel-heading">{title} @ {company}</h2>
-                                <p className="tab__panel-years">{yearsActive}</p>
+                                <h2 className="tab__panel-title">{title} @ {company}</h2>
+                                <p className="tab__panel-subtitle">{yearsActive}</p>
                                 <ul className="tab__panel-list">
                                     {information.map((info) => {
                                         return (
