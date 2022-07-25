@@ -6,6 +6,8 @@ import TabList from './TabList';
 import Button from './Button';
 import TabPanel from './TabPanel';
 
+import WorkExperience from './WorkExperience';
+
 
 const Resume = () => {
     return (
@@ -15,49 +17,32 @@ const Resume = () => {
             <div className="resume__container">
                 <Tabs selected={1}>
                     <TabList>
-                        <Tab>
-                            <Button>Kurtosys</Button>
-                        </Tab>
-                        <Tab>
-                            <Button>Entrostat</Button>
-                        </Tab>
-                        <Tab>
-                            <Button>Empire State</Button>
-                        </Tab>
-                        <Tab>
-                            <Button>The Digital Academy</Button>
-                        </Tab>
-                        <Tab>
-                            <Button>Varsity College</Button>
-                        </Tab>
-                        <Tab>
-                            <Button>Varsity College</Button>
-                        </Tab>
+                        {WorkExperience.map((experience) => {
+                            const { id, company } = experience;
+                            return (
+                                <Tab key={`company-${id}`}>
+                                    <Button>{company}</Button>
+                                </Tab>
+                            )
+                        })}
                     </TabList>
 
-                    <TabPanel>
-                        Related to Kurtosys
-                    </TabPanel>
-
-                    <TabPanel>
-                        Related to Entrostat
-                    </TabPanel>
-
-                    <TabPanel>
-                        Related to Empire State
-                    </TabPanel>
-
-                    <TabPanel>
-                        Related to The Digital Academy
-                    </TabPanel>
-
-                    <TabPanel>
-                        Related to Varsity College
-                    </TabPanel>
-
-                    <TabPanel>
-                        Related to Varsity College 2
-                    </TabPanel>
+                    {WorkExperience.map((experience) => {
+                        const { id, company, yearsActive, title, information } = experience;
+                        return (
+                            <TabPanel key={`panel-${id}`}>
+                                <h2 className="tab__panel-heading">{title} @ {company}</h2>
+                                <p className="tab__panel-years">{yearsActive}</p>
+                                <ul className="tab__panel-list">
+                                    {information.map((info) => {
+                                        return (
+                                            <li>{info}</li>
+                                        )
+                                    })}
+                                </ul>
+                            </TabPanel>
+                        )
+                    })}
                 </Tabs>
             </div>
         </section>
