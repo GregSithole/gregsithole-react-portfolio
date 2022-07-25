@@ -17,6 +17,10 @@
   transition: 0.3s;
 }
 
+.portfolio__item-active {
+  color: var(--first-color);
+}
+
 .portfolio__item:hover {
   color: var(--first-color);
 }
@@ -93,7 +97,26 @@
   opacity: 0;
 }
 
-.portfolio__card:hover .portfolio__button {
+.portfolio__github-button {
+  color: #fff;
+  position: absolute;
+  bottom: 1.5rem;
+  left: 4.5rem;
+  font-size: var(--h3-font-size);
+  display: block;
+  background-color: #ffd15c;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.portfolio__card:hover .portfolio__button,
+.portfolio__card:hover .portfolio__github-button {
   opacity: 1;
 }
 
