@@ -18,7 +18,6 @@ function App() {
 
     const switchTheme = () => {
         const newTheme = theme === 'light' ? 'dark' : 'light';
-        console.log(newTheme);
         setTheme(newTheme);
     }
 
@@ -33,7 +32,7 @@ function App() {
                 <Portfolio />
                 <Testimonials />
                 <Blog />
-                <Contact />
+                <Contact theme={theme} />
             </main>
         </div>
     );
