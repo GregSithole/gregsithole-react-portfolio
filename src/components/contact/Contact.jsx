@@ -1,11 +1,9 @@
 import React, { useState } from "react";
-import { toast, ToastContainer } from 'react-toastify';
-import axios from 'axios';
-
+import { toast, ToastContainer } from "react-toastify";
+import emailjs from "@emailjs/browser";
 
 import "./Contact.css";
-import 'react-toastify/dist/ReactToastify.css';
-
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = (props) => {
     const [name, setName] = useState("");
@@ -14,31 +12,39 @@ const Contact = (props) => {
     const [message, setMessage] = useState("");
     const [loading, setLoading] = useState(false);
 
-
     const submitHandler = async (e) => {
         e.preventDefault();
         if (!name || !email || !subject || !message) {
-            return toast.error('Please complete the form above');
+            return toast.error("Please complete the form above");
         }
 
-        try {
-            setLoading(true);
-            const { data } = await axios.post(`/api/email`, {
-                name,
-                email,
-                subject,
-                message,
-            });
-            setLoading(false);
-            toast.success(data.message);
-        } catch (err) {
-            setLoading(false);
-            toast.error(
-                err.response && err.response.data.message
-                    ? err.response.data.message
-                    : err.message
+        setLoading(true);
+
+        const data = {
+            name,
+            email,
+            subject,
+            message,
+        };
+
+        emailjs
+            .send(
+                process.env.REACT_APP_EMAILJS_SERVICE_ID,
+                process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+                data,
+                process.env.REACT_APP_EMAILJS_PUBLIC_API
+            )
+            .then(
+                (result) => {
+                    setLoading(false);
+                    toast.success(`Successfully sent email.`);
+                },
+                (error) => {
+                    setLoading(false);
+                    console.log(error);
+                    toast.error(error.text);
+                }
             );
-        }
     };
 
     return (
@@ -96,7 +102,7 @@ const Contact = (props) => {
                     </div>
 
                     <button type="submit" className="btn">
-                        {loading ? 'Sending...' : 'Send Message'}
+                        {loading ? "Sending..." : "Send Message"}
                     </button>
                 </form>
                 <ToastContainer position="bottom-right" theme={props.theme} />
