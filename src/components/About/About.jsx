@@ -1,9 +1,15 @@
 import React from 'react';
 import './About.css';
 import Image from '../../assets/avatar-2.svg';
+import Resume from '../../assets/resume.pdf';
 import AboutBox from './AboutBox';
 
 const About = () => {
+    const downloadResume = async () => {
+        window.open(Resume, '_blank');
+    }
+
+
     return (
         <section className="about container section" id="about">
             <h2 className="section__title">About Me </h2>
@@ -25,7 +31,7 @@ const About = () => {
                             <li>Postgres SQL</li>
                             <li>NestJS</li>
                         </ul>
-                        <a href="#" className="btn">Donwload CV</a>
+                        <button className="btn" onClick={downloadResume}>Donwload CV</button>
                     </div>
 
                     <div className="about__skills grid">
