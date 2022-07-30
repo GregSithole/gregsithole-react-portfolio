@@ -8,23 +8,23 @@ const data = [
     {
         id: 1,
         image: Image1,
-        title: "UI/UX design",
+        title: "Responsive design",
         description:
-            "Lorem ipsum dolor sit amet consectetuer adipiscing elit         aenean commodo ligula eget.",
+            "Ensuring that the website/mobile app is responsive across all platforms",
     },
     {
         id: 2,
         image: Image2,
         title: "Web Development",
         description:
-            "Lorem ipsum dolor sit amet consectetuer adipiscing elit         aenean commodo ligula eget.",
+            "Ensuring that that a website meets the correct standards, and also ensuring it's well maintained",
     },
     {
         id: 3,
         image: Image3,
-        title: "Photography",
+        title: "Mobile Development",
         description:
-            "Lorem ipsum dolor sit amet consectetuer adipiscing elit         aenean commodo ligula eget.",
+            "Ensuring that a mobile app meets the correct standards, and also ensuring it's well maintained",
     },
 ];
 
@@ -37,7 +37,7 @@ const Services = () => {
                 {data.map(({ id, image, title, description }) => {
                     return (
                         <div className="services__card" key={id}>
-                            <img src={image} alt='' className='services__img' />
+                            <img src={image} alt='' className='services__img' width="80" />
 
                             <h3 className="services__title">{title}</h3>
                             <p className="services__description">{description}</p>
