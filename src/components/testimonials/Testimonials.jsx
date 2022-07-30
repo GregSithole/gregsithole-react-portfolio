@@ -1,7 +1,7 @@
 import React from 'react';
 import './Testimonials.css';
-import Image1 from '../../assets/avatar-1.svg'
 import Image3 from '../../assets/avatar-3.svg'
+import Image4 from '../../assets/avatar-4.svg'
 
 import { Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -14,17 +14,17 @@ const Testimonials = () => {
     const data = [
         {
             id: 1,
-            image: Image1,
-            title: "John Doe",
-            subtitle: "Product designer at Dribble",
+            image: Image3,
+            title: "Thapelo Kekana",
+            subtitle: "Frontend Developer @ FNB",
             comment:
                 "I enjoy working with the theme and learn so much. You       guys make the process fun and interesting. Good luck! 👍",
         },
         {
             id: 2,
-            image: Image3,
-            title: "John Doe",
-            subtitle: "Product designer at Dribble",
+            image: Image4,
+            title: "Deepak Reddy",
+            subtitle: "Software Developer @ BMW Group South Africa",
             comment:
                 "I enjoy working with the theme and learn so much. You       guys make the process fun and interesting. Good luck! 👍",
         },
@@ -33,7 +33,7 @@ const Testimonials = () => {
     return (
         <section className="testimonials container section">
 
-            <h2 className="section__title">Clients & Reviews</h2>
+            <h2 className="section__title">Testimonials</h2>
 
             <Swiper className="testimonial__container grid"
                 modules={[Pagination]}
