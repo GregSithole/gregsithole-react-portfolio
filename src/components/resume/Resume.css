@@ -16,8 +16,20 @@
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
 }
+
 .tab__panel.is-active {
   display: block;
+}
+
+.tab__panel-list li {
+  position: relative;
+  padding-left: 20px;
+}
+
+.tab__panel-list li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
 }
 
 .button {
@@ -90,11 +102,18 @@
 .tab__panel-title {
   font-size: var(--h3-font-size);
   margin-bottom: 1rem;
+  color: var(--title-color);
+}
+
+[data-theme="dark"] .tab__panel-title {
   color: #fff;
 }
 
 .tab__panel-subtitle {
   font-size: var(--normal-font-size);
   margin-bottom: 1rem;
+}
+
+[data-theme="dark"] .tab__panel-subtitle {
   color: #f8f9fa;
 }
