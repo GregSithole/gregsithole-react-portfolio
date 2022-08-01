@@ -7,13 +7,13 @@ ENV PATH /app/node_modules/.bin:$PATH
 COPY ./package.json /app/
 COPY ./yarn.lock /app/
 
-RUN npm install
+RUN yarn install
 
 COPY . /app
 
 RUN yarn run build
 
-RUN npm install -g serve
+RUN yarn global add serve
 
 EXPOSE 80
 
