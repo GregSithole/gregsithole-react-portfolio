@@ -22,10 +22,11 @@ export class Tabs extends Component {
                 if (childTab.type.name === "Tab") {
                     const _isActive = (tab === this.state.selected)
                     const _onClick = this.handleClick(tab)
+                    const _key = childTab.key;
 
                     tab++
 
-                    return React.cloneElement(childTab, { _isActive, _onClick })
+                    return React.cloneElement(childTab, { _isActive, _onClick, _key })
                 }
 
                 return childTab
@@ -37,16 +38,18 @@ export class Tabs extends Component {
         let panel = 0
 
         return React.Children.map(children, (child) => {
+
             if (child.type.name === "TabList") {
                 return this.renderTabList(child)
             }
 
             if (child.type.name === "TabPanel") {
                 const _isActive = (panel === this.state.selected)
+                const _key = child.key;
 
                 panel++
 
-                return React.cloneElement(child, { _isActive })
+                return React.cloneElement(child, { _isActive, _key })
             }
 
             return child

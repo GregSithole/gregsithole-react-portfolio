@@ -1,9 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const TabPanel = ({ _isActive, children }) => {
+const TabPanel = ({ _isActive, children, _key }) => {
     return (
         <motion.div
+            key={_key}
             animate={{ opacity: 1 }}
             initial={{ opacity: 0 }}
             exit={{ opacity: 0 }}
