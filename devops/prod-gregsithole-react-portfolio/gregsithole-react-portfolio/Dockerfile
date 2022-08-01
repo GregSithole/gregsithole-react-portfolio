@@ -5,7 +5,7 @@ WORKDIR /app
 ENV PATH /app/node_modules/.bin:$PATH
 
 COPY ./package.json /app/
-COPY ./package-lock.json /app/
+COPY ./yarn.lock /app/
 
 RUN npm install
 
