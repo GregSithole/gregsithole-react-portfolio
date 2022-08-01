@@ -1,0 +1,30 @@
+version: "3.6"
+services:
+  gregsithole-react-portfolio:
+    build:
+      context: $PWD/../..
+      dockerfile: $PWD/gregsithole-react-portfolio/Dockerfile
+    restart: always
+    expose:
+      - "80"
+      - "443"
+    environment:
+      - VIRTUAL_HOST=gregsithole.com, www.gregsithole.com
+      - VIRTUAL_PORT=80
+      - LETSENCRYPT_HOST=gregsithole.com, www.gregsithole.com
+      - LETSENCRYPT_EMAIL=gregsithole@hotmail.co.za
+  nginx:
+    image: nginx
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+    expose:
+      - 80
+    depends_on:
+      - gregsithole-react-portfolio
+    links:
+      - gregsithole-react-portfolio
+
+networks:
+  default:
+    external:
+      name: nginx-proxy
