@@ -10,12 +10,13 @@ import WorkExperience from './WorkExperience';
 
 
 const Resume = () => {
+    let selected = 1;
     return (
         <section className="resume container section" id="resume">
             <h2 className="section__title">Experience</h2>
 
             <div className="resume__container">
-                <Tabs selected={1}>
+                <Tabs selected={selected}>
                     <TabList>
                         {WorkExperience.map((experience) => {
                             const { id, company } = experience;
