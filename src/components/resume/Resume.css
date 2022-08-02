@@ -64,6 +64,7 @@
   border-top-left-radius: var(--border-radius);
   border-bottom-left-radius: var(--border-radius);
   box-shadow: var(--shadow);
+  color: var(--first-color);
 }
 
 .tab__panel:first-of-type.is-active,
