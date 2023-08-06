@@ -1,6 +1,7 @@
 import Work1 from "../../assets/native-jobs.png";
 import Work2 from "../../assets/cryptoverse.png";
 import Work3 from "../../assets/travel.png";
+import Work4 from "../../assets/blog-1.svg";
 
 const Menu = [
 	{
@@ -25,6 +26,14 @@ const Menu = [
 		category: ["Frontend"],
 		url: "https://travel.gregsithole.com",
 		repositoryUrl: "https://github.com/GregSithole/travel-advisor"
+	},
+	{
+		id: 4,
+		image: Work4,
+		title: "Wallhaven CLI",
+		category: ["Backend"],
+		url: "https://www.npmjs.com/package/wallhaven-cli",
+		repositoryUrl: "https://github.com/GregSithole/wallhaven-cli"
 	}
 ];
 
