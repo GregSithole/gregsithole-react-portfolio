@@ -82,18 +82,28 @@
 }
 
 .development {
-  width: 90%;
+  width: 80%;
   background-color: rgb(255, 209, 92);
 }
 
 .ui__design {
-  width: 80%;
+  width: 60%;
   background-color: rgb(255, 76, 96);
 }
 
-.photography {
-  width: 60%;
+.python {
+  width: 90%;
   background-color: rgb(108, 108, 299);
+}
+
+.rust {
+  width: 75%;
+  background-color: dodgerblue;
+}
+
+.c {
+  width: 50%;
+  background-color: lightgreen;
 }
 
 .about__boxes {
